@@ -1,0 +1,408 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* ╔═══════════════ ✿.｡.:* ☆:**:. Navs .:**:.☆*.:｡.✿ ═══════════════╗ */
+
+.navbar {
+  background-color: LemonChiffon !important;
+}
+
+.navbar li i {
+  font-size: 150%;
+  color: DarkTurquoise;
+  padding-right: 15px;
+}
+
+.navbar li i:hover {
+  color: DeepPink;
+}
+
+.sidebar-container {
+  position: fixed;
+  height: 100%;
+  width: 225px;
+  background-color: LightYellow;
+}
+
+.accordion {
+  position: relative;
+  margin: 75px 10px 10px 0px;
+}
+
+.sidebar-accordion .label {
+  position: relative;
+  padding: 5px 0;
+  margin-left: 25px;
+  cursor: pointer;
+  font-style: 'Raleway';
+  font-size: 115%;
+  font-weight: 500;
+  color: DarkTurquoise
+}
+
+.sidebar-accordion .label:hover {
+  color: DeepPink;
+}
+
+.sidebar-accordion .label-1 {
+  font-size: 120%;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.label-1 a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.label-1 a:hover {
+  color: currentColor;
+}
+
+.sidebar-accordion .label i {
+  padding-left: 5px;
+  font-size: 75%;
+}
+
+.sidebar-nav li {
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  color: DarkGray;
+}
+
+.sidebar-nav li a:hover {
+  color: HotPink;
+}
+
+/* THE ACCORDION EFFECT */
+.sidebar-accordion .sidebar-nav {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-accordion.active .sidebar-nav {
+  height: auto;
+}
+
+.sidebar-accordion.active i {
+  transform: rotate(180deg);
+  padding-right: 7px;
+  padding-top: 2px;
+}
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Footer .:**:.☆*.:｡.✿ ═════════════╗ */
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer a {
+  padding: 5px;
+  font-family: 'Raleway';
+  font-size: 275%;
+  font-weight: bold;
+  color: DeepPink
+}
+
+/* THE STICKY FOOTER EFFECT */
+html, body {
+  height: 100%;
+}
+
+body footer {
+  position: sticky;
+  top: 100vh;
+}
+
+/* OPTION 2: ALWAYS IN BOTTOM RIGHT CORNER OF VISIBLE SCREEN
+footer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+} */
+
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Tables .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.main-container {
+  margin-left: 350px;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.table-header {
+  padding-bottom: 25px;
+  font-family: 'Raleway';
+}
+
+.table-header h1 {
+  font-weight: bold;
+  color: DarkTurquoise;
+}
+
+.table-header h2 {
+  color: DarkGray;
+  margin-top: -10px;
+}
+
+.table-name {
+  font-weight: bold;
+}
+
+.table-description {
+  color: DarkGray;
+}
+
+td .img-container {
+  height: 75px;
+  width: 75px;
+  border: solid 1px WhiteSmoke;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+td .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fa-times, .fa-expand-alt {
+  color: Black;
+  padding: 10px;
+}
+
+.fa-times:hover {
+  color: OrangeRed;
+}
+
+.fa-expand-alt:hover {
+  color: SeaGreen;
+}
+
+.table-row:hover {
+  background-color: Azure;
+}
+
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Forms .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.col-12 h4 {
+  margin-top: 25px;
+  margin-bottom: -10px;
+  color: Turquoise;
+}
+
+.status-radio{
+  padding-left: 125px;
+}
+
+input, select, select option, textarea, label, .small-green-button {
+  font-family: 'Raleway';
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: Snow !important;
+  box-shadow: inset 0 2px 3px rgb(224, 255, 255, 0.075), 0 0 8px rgb(0, 206, 209, 2) !important;
+}
+
+.small-green-button {
+  margin-top: 25px;
+  background-color:DarkTurquoise;
+  border:0px;
+}
+
+.btn-primary:hover {
+  background-color:LimeGreen;
+  border:0px;
+}
+
+.btn-secondary:hover {
+  background-color:OrangeRed;
+  border:0px;
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+  border: 0px;
+  background-color: MediumTurquoise !important
+}
+
+.readonly-form input{
+  color: Gray;
+  background-color: LightCyan !important;
+  border: 0px;
+}
+
+.readonly-form input:focus {
+  color: Gray;
+  box-shadow: none !important;
+}
+
+/* THE NON-JS TOOLTIP */
+.fa-circle-question {
+  color: DarkTurquoise;
+  cursor: help;
+}
+
+.mytooltip {
+  position: relative;
+}
+
+.mytooltip:before {
+  display:none; /* <== */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 15px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  content: attr(data-text);
+  background: LightPink;
+  font-family: 'Raleway';
+  font-size: 90%;
+  color: White;
+  text-align:center;
+}
+
+.mytooltip:hover:before {
+  display: block;
+}
+
+/* AND THE TOOLTIP'S ARROW-Y TIP */
+.mytooltip:after {
+  display:none;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:100%;
+  margin-left:-5px;
+  content: "";
+  border:10px solid #000;
+  border-color: transparent LightPink transparent transparent;
+}
+
+.mytooltip:hover:before, .mytooltip:hover:after {
+  display: block;
+}
+
+
+/* ╔═════════════ ✿.｡.:* ☆:**:. Post-its .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.corkboard ul, li {
+  list-style: none;
+  text-align: left;
+}
+
+.corkboard ul {
+  overflow: hidden;
+  padding: 25px;
+  /* THE SHUFFLE TO MAKE LAST ENTRY APPEAR FIRST */
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.post-it {
+  display: block;
+  float: left;
+  margin: 25px;
+  padding: 20px;
+  height: 275px;
+  width: 255px;
+  background: #f6ff7a;
+  box-shadow: 3px 3px 10px Gray;
+  transition: transform .15s linear;
+}
+
+.note-date {
+  margin-bottom: 10px;
+  font-family: 'Raleway';
+  font-size: 110%
+}
+
+.note-content {
+  margin-bottom: 8px;
+  font-family: 'Raleway';
+  font-size: 95%
+}
+
+/* THE DIFFERENT POSSITIONS AND COLORS */
+.corkboard ul li:nth-child(even) {
+  position: relative;
+  top: 5px;
+  transform: rotate(4deg);
+}
+
+.corkboard ul li:nth-child(3n) {
+  position: relative;
+  top: -5px;
+  transform: rotate(-3deg);
+  background: LightPink;
+}
+
+.corkboard ul li:nth-child(5n) {
+  position: relative;
+  top: -10px;
+  transform: rotate(5deg);
+  background: LightSkyBlue;
+}
+
+.corkboard ul li:hover, ul li:focus {
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 10px 7px Gray;
+  transform: scale(1.25);
+}
+
+
+/* ╔════════════ ✿.｡.:* ☆:**:. Nueva Novedad .:**:.☆*.:｡.✿ ═════════════╗ */
+
+.call-to-action{
+  text-align: center;
+  font-family: 'Raleway';
+  letter-spacing: 1px;
+}
+
+.call-to-action i{
+  color: DarkTurquoise !important;
+}
+
+.call-to-action i:hover {
+  color: LimeGreen !important;
+}
+
+.collapsible-form {
+  margin: 0px 175px 0px 175px;
+  padding: 25px;
+  background-color: LavenderBlush
+}
+
+#form-novedad{
+  width: 50%;
+}
+
+.thank-you{
+  margin-top: -31px;
+  text-align: center;
+}
+
+.alert-info {
+  font-family: 'Raleway';
+  font-size: 150%;
+  border: 0px;
+  background-color: rgb(255, 182, 193, .75);
+  color: White;
+}
